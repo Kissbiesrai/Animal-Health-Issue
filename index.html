@@ -46,9 +46,6 @@
               <option value="Drukjegang">Drukjegang</option>
               <option value="Khebisa">Khebisa</option>
               
-              
-              
-              
             </select>
           </div>
         </div>
@@ -99,11 +96,99 @@
                       oninput="validateCID(this)"
                   />
               </div>
-          </div>
-          </div>
-          </div>
-            </div>
-
+              <div class="field">
+                <label class="label">Phone Number <span style="color: red;">*</span></label>
+                <div class="control">
+                    <input 
+                        class="input" 
+                        type="number" 
+                        placeholder="Owner's Phone Number." 
+                        name="Phone Number" 
+                        required 
+                        minlength="8" 
+                        maxlength="8" 
+                        pattern="\d{8}" 
+                        oninput="validatePhonenumber(this)"/>
+                      </div>
+                      <div class="field">
+                        <label class="label">Village<span style="color: red;">*</span></label>
+                        <div class="control">
+                          <input
+                            class="input"
+                            type="Text" only
+                            placeholder="Enter owner's Village"
+                            name="Owner's Village"
+                            required
+                          />
+                        </div>
+                        <div class="field">
+                          <label class="label">Gewog<span style="color: red;">*</span></label>
+                          <div class="control">
+                            <select name="Gewog"required>
+                              <option value=""></option>
+                              <option value="Tseza">Tseza</option>
+                              <option value="Dorona">Dorona</option>
+                              <option value="Nichula">Nichula</option>
+                              <option value="Lhamoizingkha">Lhamoizingkha</option>
+                              <option value="Tsendagang">Tsendagang</option>
+                              <option value="Karmaling">Karmaling</option>
+                              <option value="Gozhi">Gozhi</option>
+                              <option value="Tsangkha">Tsangkha</option>
+                              <option value="Tashiding">Tashiding</option>
+                              <option value="Largyab">Largyab</option>
+                              <option value="Geserling">Gesarling</option>
+                              <option value="Karna">Karna</option>
+                              <option value="Drukjegang">Drukjegang</option>
+                              <option value="Khebisa">Khebisa</option>
+                            </select>
+                          </div>
+                        </div>
+                      <div class="field">
+                        <label class="label">Dzongkhag<span style="color: red;">*</span></label>
+                        <div class="control">
+                          <select name="Dzongkhag"required>
+                            <option value="Dagana">Dagana</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Animal Type<span style="color: red;">*</span></label>
+                      <div class="control">
+                        <select name="Animal Type"required>
+                          <option value=""></option>
+                          <option value="Poultry">Poultry</option>
+                          <option value="Swine">Swine</option>
+                          <option value="Caprine">Caprine</option>
+                          <option value="Bovine">Bovine</option>
+                          <option value="Sheep">Sheep</option>
+                          <option value="Equine">Equine</option>
+                          <option value="Fish">Fish</option>
+                        </select>
+                      </div>
+                      <div class="field">
+                        <label class="label">Young Male</label>
+                        <div class="control">
+                            <input 
+                                class="input" 
+                                type="number" 
+                                placeholder="Young Male" 
+                                name="Young Male" 
+                              />
+                             </div>
+                             <div class="field">
+                              <label class="label">Young Female</label>
+                              <div class="control">
+                                  <input 
+                                      class="input" 
+                                      type="number" 
+                                      placeholder="Young Female" 
+                                      name="Young Female" 
+                                    />
+                                   </div>
+                    
+                        
+                              
       <div class="field">
         <label class="label">Email</label>
         <div class="control">
@@ -216,7 +301,7 @@
 
         // Send a POST request to your Google Apps Script
         fetch(
-          "https://script.google.com/macros/s/AKfycbw17AaRk7JeZ3oA5xJnpMMj4yQ0oyYvsI_sSJcSJUfmkWtq1AzTU_lsu1Bg2PXAG8qJ/exec",
+          "https://script.google.com/macros/s/AKfycbxVAWacY-q3zQR5Az9BKZq9E3IaWZKLmoBx0NlbmDgL-JDOwcWiBoUDwY8F3G7mnfOp/exec",
           {
             redirect: "follow",
             method: "POST",
